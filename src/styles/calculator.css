@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(135deg, #1f1f2e, #3d2b56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.calculator {
+  background: #2b2b3c;
+  border-radius: 20px;
+  padding: 20px;
+  width: 420px;
+  box-shadow: 0px 10px 30px rgba(0,0,0,0.6),
+              inset 0px -2px 8px rgba(255,255,255,0.1);
+}
+
+.display {
+  background: #141421;
+  color: #00ffcc;
+  font-size: 2rem;
+  text-align: right;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  overflow-x: auto;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 12px;
+}
+
+.calc-btn {
+  background: linear-gradient(145deg, #3a3a52, #2a2a40);
+  color: #f5f5f5;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.4),
+              inset 0px -2px 4px rgba(255,255,255,0.1);
+}
+
+.calc-btn:hover {
+  background: linear-gradient(145deg, #444466, #2f2f45);
+  transform: translateY(-2px);
+}
+
+.calc-btn:active {
+  background: #1f1f2e;
+  transform: translateY(1px);
+}
+
+.btn-red {
+  background: #ff3b3b;
+  color: #fff;
+}
+
+.btn-orange {
+  background: #ff9500;
+  color: #fff;
+}
+
+.btn-blue {
+  background: #007aff;
+  color: #fff;
+}
+
+.btn-equal {
+  background: linear-gradient(145deg, #00d4ff, #0066ff);
+  color: white;
+  grid-column: span 2;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
